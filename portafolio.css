@@ -1,0 +1,564 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: sans-serif;
+  margin-top: 65px;
+  margin-left: 0;
+  margin-right: 0;
+  background-color: rgb(240, 240, 240);
+}
+
+.contBarra {
+  position: fixed;
+  display: flex;
+  background: rgba(68, 136, 238, 0.9);
+  height: 65px;
+  width: 100%;
+  margin-top: -65px;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+}
+.logoarg {
+  width: 140px;
+  height: 100px;
+  filter: drop-shadow(2px 2px 4px black);
+}
+
+.yoprogramo {
+  display: flex;
+  font-size: 2em;
+ 
+  color: rgb(240, 240, 240);
+  text-shadow: 2px 2px 4px black;
+}
+
+.logoYyoprogramo {
+  display: flex;
+  align-items: center;
+}
+
+.lista {
+  display: flex;
+  font-size: 1.5em;
+  margin-right: 40px;
+}
+
+.lista li {
+  display: inline;
+  margin: 0px 10px;
+}
+
+.lista li a {
+  text-decoration: none;
+  color: rgb(240, 240, 240);
+  text-shadow: 2px 2px 4px black;
+}
+.botonLogin {
+  position: absolute;
+  margin-top: -5px;
+  border: none;
+  background: transparent;
+  filter: drop-shadow(2px 2px 4px black);
+}
+.imgLogin {
+  filter: invert(90%);
+  width: 30px;
+  height: 30px;
+}
+
+.cambiacolor:hover {
+  color: rgb(112, 153, 250);
+}
+
+.banner {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-bottom: 1px solid rgba(30, 30, 30, 0.7);
+  object-position: left;
+}
+
+.soyRodrigo {
+  padding: 1px;
+  margin-top: -4px;
+  background: linear-gradient(rgba(68, 136, 238) 95%, rgb(240, 240, 240));
+  text-align: center;
+  color: rgb(240, 240, 240);
+  text-shadow: 2px 2px 4px black;
+}
+.fotoperfil {
+  width: 200px;
+  height: 250px;
+  position: absolute;
+  border: 3px solid rgba(68, 136, 238);
+  border-radius: 100%;
+  margin-top: -252px;
+  margin-left: 10px;
+  filter: contrast(120%);
+}
+
+.divSeparador {
+  border-bottom: 4px solid #759eff;
+  width: 50px;
+  margin: 20px auto 60px;
+}
+
+section h2 {
+  font-size: 2.5em;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+#sobreMi p {
+  display: flex;
+  font-size: 1.3em;
+  margin: 50px 40px;
+  color: rgb(20, 20, 20);
+}
+
+.contExp {
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+}
+
+.trabajando {
+  width: 60px;
+  filter: invert(66%) sepia(65%) saturate(3372%) hue-rotate(197deg)
+    brightness(101%) contrast(103%);
+  margin: 0px auto 10px;
+  display: flex;
+}
+
+#experiencia p {
+  font-size: 1.3em;
+  margin-top: 40px;
+  color: rgb(20, 20, 20);
+}
+
+#experiencia h3 {
+  color: rgb(20, 20, 20);
+  margin-bottom: 50px;
+}
+
+.expUno {
+  padding: 45px;
+  border: 2px solid rgba(117, 158, 255, 0.8);
+  border-radius: 10px;
+  transition: all .3s;
+}
+.expUno:hover, .expDos:hover, .expTres:hover{
+  background: rgb(245, 245, 245);
+  box-shadow: 0px 0px 10px 1px rgba(68, 136, 238, .5);
+  }
+.expDos {
+  padding: 45px;
+  border: 2px solid rgba(117, 158, 255, 0.8);
+  border-radius: 10px;
+  transition: all .3s;
+}
+.expTres {
+  padding: 45px;
+  border: 2px solid rgba(117, 158, 255, 0.8);
+  border-radius: 10px;
+  transition: all .3s;
+}
+
+#estudios p {
+  font-size: 1.3em;
+  margin: 40px 0px;
+  color: rgb(20, 20, 20);
+}
+.iconoLee {
+  width: 60px;
+  filter: invert(66%) sepia(65%) saturate(3372%) hue-rotate(197deg)
+    brightness(101%) contrast(103%);
+  margin: 30px auto;
+  display: flex;
+}
+.estUno {
+  padding: 20px;
+  border: 2px solid rgba(117, 158, 255, 0.8);
+  border-radius: 10px;
+  transition: background .3s, box-shadow .5s;
+}
+
+.estDos {
+  padding: 20px;
+  border: 2px solid rgba(117, 158, 255, 0.8);
+  border-radius: 10px;
+  transition: background .3s, box-shadow .5s;
+}
+.estTres {
+  padding: 20px;
+  border: 2px solid rgba(117, 158, 255, 0.8);
+  border-radius: 10px;
+  transition: background .3s, box-shadow .5s;
+}
+.estUno:hover, .estDos:hover, .estTres:hover{
+  background: rgb(245, 245, 245);
+  box-shadow: 0px 0px 10px 1px rgba(68, 136, 238, .5);
+}
+.contEst {
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+}
+
+.contHab {
+  justify-content: space-around;
+  display: flex;
+
+  align-items: center;
+}
+
+.divFront h3 {
+  margin-left: 190px;
+  margin-bottom: 50px;
+  font-size: 1.7em;
+}
+.divBack h3 {
+  margin-left: 33px;
+  margin-bottom: 50px;
+  font-size: 1.7em;
+}
+
+.divSepF {
+  border-bottom: 2px solid #759eff;
+  width: 30px;
+  margin-bottom: 50px;
+  margin-left: 240px;
+  margin-top: -30px;
+}
+.divSepB {
+  border-bottom: 2px solid #759eff;
+  width: 30px;
+  margin-bottom: 50px;
+  margin-left: 80px;
+  margin-top: -30px;
+}
+.html {
+  width: 200px;
+  padding-bottom: 50px;
+}
+.css {
+  width: 360px;
+  padding-bottom: 50px;
+}
+.js {
+  width: 330px;
+  margin-left: -70px;
+  padding-bottom: 40px;
+}
+.contContacto {
+  justify-content: space-around;
+  display: flex;
+  padding-bottom: 50px;
+}
+
+#contacto p {
+  display: flex;
+  font-size: 1.2em;
+  text-align: center;
+  justify-content: center;
+  color: rgb(20, 20, 20);
+}
+#contacto h3 {
+  font-size: 1.7em;
+  color: rgb(20, 20, 20);
+  text-align: center;
+}
+
+.iconoTel {
+  width: 45px;
+  margin: 30px auto;
+  filter: invert(66%) sepia(65%) saturate(3372%) hue-rotate(197deg)
+    brightness(101%) contrast(103%);
+  display: flex;
+}
+
+.iconoCorreo {
+  width: 45px;
+  filter: invert(66%) sepia(65%) saturate(3372%) hue-rotate(197deg)
+    brightness(101%) contrast(103%);
+  margin: 30px auto;
+  display: flex;
+}
+
+.miCorreo {
+  text-decoration: none;
+  color: rgb(20, 20, 20);
+
+}
+.miCorreo p{
+  transition: .4s;
+}
+.miCorreo p:hover{
+  box-shadow: 0px 0px 10px 1px rgba(68, 136, 238, .5);
+}
+
+.iconoGit {
+  width: 45px;
+  margin: 30px auto;
+  filter: invert(66%) sepia(65%) saturate(3372%) hue-rotate(197deg)
+    brightness(101%) contrast(103%);
+  display: flex;
+}
+
+section {
+  padding-top: 50px;
+ 
+}
+
+
+.menuResp {
+  display: none;
+}
+.fotoperfilResponsive{
+  display: none;
+}
+
+@media screen and (max-width: 1210px) and (min-width: 1005px) {
+
+  .yoprogramo {
+    display: none;
+  }
+   .expUno {
+    padding: 30px;
+      }
+  .expDos {
+    padding: 30px;
+  }
+  .expTres {
+    padding: 30px;
+  }
+  .estUno{
+padding: 2px;
+margin: auto 4px;
+  }
+  .estDos{
+padding: 2px;
+margin: auto 4px;
+  }
+  .estTres{
+padding: 2px;
+margin: auto 4px;
+  }
+ 
+}
+@media screen and (max-width: 1005px) and (min-width: 980px) {
+  .logoarg {
+    position: absolute;
+    margin-top: -51px;
+  }
+  .yoprogramo {
+    display: none;
+  }
+  .expUno {
+    padding: 30px;
+      }
+  .expDos {
+    padding: 30px;
+  }
+  .expTres {
+    padding: 30px;
+  }
+  .estUno{
+    padding: 2px;
+    margin: auto 4px;
+      }
+      .estDos{
+    padding: 2px;
+    margin: auto 4px;
+      }
+      .estTres{
+    padding: 2px;
+    margin: auto 4px;
+      }
+}
+@media screen and (max-width: 910px){
+  .fotoperfil{
+    display: none;
+  }
+  .fotoperfilResponsive {
+width: 200px;
+height: 250px;
+    display:flex ;
+    border: 3px solid rgba(68, 136, 238);
+    border-radius: 100%;
+    background-size: cover;
+    filter: contrast(120%);
+    margin: auto;
+}
+}
+@media screen and (max-width:980px) and (min-width:950px){
+  .logoarg {
+    position: absolute;
+    margin-top: -51px;
+  }
+  .yoprogramo {
+    display: none;
+  }
+  .expUno {
+    padding: 30px;
+      }
+  .expDos {
+    padding: 30px;
+  }
+  .expTres {
+    padding: 30px;
+  }
+  .estUno{
+    padding: 2px;
+    margin: auto 4px;
+      }
+      .estDos{
+    padding: 2px;
+    margin: auto 4px;
+      }
+      .estTres{
+    padding: 2px;
+    margin: auto 4px;
+      }
+      .logoYyoprogramo{
+        display: none;
+}
+}
+@media screen and (max-width:980px) and (min-width:829px){
+  .logoYyoprogramo{
+    display: none;
+    }
+    
+  .lista {
+    display: flex;
+    font-size: 1.5em;
+    margin-left: -35px;
+  }
+  
+.yoprogramo {
+  display: none;
+}
+}
+
+@media  screen and (max-width:880px){
+
+  .contEst {
+  display: block;
+  text-align: center;
+  justify-content: space-around;
+}
+.contHab {
+  justify-content: space-around;
+  display: block;
+  text-align: center;
+ 
+}
+.contExp {
+  display: block;
+  text-align: center;
+  justify-content: space-around;
+  
+}
+
+.expUno {
+  padding: 30px;
+  margin: 6px 10px;
+    }
+.expDos {
+  padding: 30px;
+  margin: 6px 10px;
+}
+.expTres {
+  padding: 30px;
+  margin: 6px 10px;
+}
+.estUno{
+  padding: 2px;
+  margin: 6px 10px;
+    }
+    .estDos{
+  padding: 2px;
+  margin: 6px 10px;
+    }
+    .estTres{
+  padding: 2px;
+  margin: 6px 10px;
+    }
+
+.divFront h3 {
+  margin-left: auto;
+  margin-bottom: 50px;
+ 
+  font-size: 1.7em;
+}
+.divBack h3 {
+  margin-left: auto;
+  margin-bottom: 50px;
+  font-size: 1.7em;
+}
+
+.divSepF {
+  border-bottom: 2px solid #759eff;
+  width: 30px;
+
+  margin:-30px auto 50px ;
+ 
+}
+.divSepB {
+  border-bottom: 2px solid #759eff;
+  width: 30px;
+  margin:-30px auto 50px ;
+}
+.html {
+  width: 200px;
+  padding-bottom: 50px;
+
+}
+.css {
+  width: 360px;
+  
+  padding-bottom: 50px;
+
+}
+.js {
+  width: 330px;
+  margin:-30px auto 50px ;
+  padding-bottom: 40px;
+}
+
+}
+@media  screen and (max-width:880px) and (min-width:830px){
+  .logoarg {
+    display: none;
+}
+}
+
+@media  screen and (max-width:830px){
+  .lista{
+    display: none;
+  }
+
+  .fotoperfil {
+    width: 200px;
+    height: 250px;
+  
+   margin: auto;
+    border: 3px solid rgba(68, 136, 238);
+    border-radius: 100%;
+  
+   
+    filter: contrast(120%);
+  }
+  #sobreMi p{
+    position: relative;
+    margin: 50px 0px;
+  }
+  
+}
+
+
